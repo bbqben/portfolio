@@ -1,0 +1,70 @@
+header {
+	min-height: 20vh;
+	.header__wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 25px 0;
+		.logo {
+		padding: 20px 0;
+			font-size: 7rem;
+			font-weight: 900;
+		}
+		.links {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.links__socialMedia {
+				font-size: 1.6rem;
+				text-align: right;
+				i {
+					padding: 0 20px;
+				}
+			}
+			.links__website {
+				font-size: 1.8rem;
+				a {
+					display: inline-block;
+					margin: 0 20px;
+					padding-bottom: 1px;
+				}
+				a:hover {
+					border-bottom: 1px solid red;
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+.splash {
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://unsplash.it/3840/2160");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center 75%;
+	min-height: 80vh;
+	position: relative;
+	.splash__words {
+		position: absolute;
+		right: 15%;
+		top: 45%;
+		p {
+			// text-align: right;
+			display: block;
+			line-height: 4rem;
+			font-size: 5rem;
+			color: white;
+			margin: 0;
+			text-transform: uppercase;
+		}
+		p:first-child {
+			position: relative;
+			font-weight: 100;
+		}
+		p:last-child {
+			font-weight: 900;
+			position: relative;
+			left: 50px;
+		}
+	}
+}

@@ -1,6 +1,12 @@
 @import 'partials/setup';
+@import 'partials/headerSplash';
+
+.wrapper {
+	max-width: 70%;
+	margin: 0 auto;
+}
 
 
-.splash {
-	// background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6) url('http://unsplash.i'))
+.aboutMe {
+	background: red;
 }
