@@ -1,0 +1,56 @@
+.myWorks {
+	background: #F6F6F6;
+	padding: 65px 0;
+	.myWorks__wrapper {
+		max-width: 70%;
+		// background: red;
+		.project {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			margin: 50px 0;
+			.project__image {
+				width: 50%;
+				img {
+					width: 100%;
+					padding: 35px;
+				}
+			}
+			.project__description {
+				width: 50%;
+				padding: 0 50px;
+				font-size: 1.6rem;
+				line-height: 3.8rem;
+				p {
+					font-family: roboto;
+					margin: 0;
+				}
+				p:first-child {
+					font-size: 4rem;
+					font-weight: 900;
+					margin-bottom: 5px;
+				}
+				.tags {
+					margin: 10px 0 20px 0;
+					span {
+						background: $color-blue;
+						color: #000;
+						font-style: italic;
+						padding: 5px 10px;
+						margin-right: 5px;
+						transition: all 0.2s ease;
+					}
+					span:hover {
+						background: $color-orange;
+						color: white;
+					}
+				}
+			}
+
+		}
+		.project:nth-of-type(even) {
+			flex-direction: row-reverse;
+		}
+	}
+}

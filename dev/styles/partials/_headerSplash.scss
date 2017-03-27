@@ -26,7 +26,7 @@ header {
 					transition: color 0.2s ease;
 				}
 				i:hover {
-					color: #7dddf9;
+					color: $color-blue;
 				}
 			}
 			.links__website {
@@ -47,7 +47,7 @@ header {
 						  height: 2px;
 						  bottom: -3px;
 						  left: 0;
-						  background-color: #7dddf9;
+						  background-color: $color-blue;
 						  visibility: hidden;
 						  -webkit-transform: scaleX(0);
 						  transform: scaleX(0);
@@ -70,13 +70,13 @@ header {
 
 .splash {
 	background: url("../assets/background.jpeg");
-	opacity: 0.9;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center 75%;
-	background-attachment: inherit;
+	background-position: 100%;
+	background-attachment: fixed;
 	min-height: 82vh;
 	position: relative;
+	opacity: 0.95;
 	.splash__words {
 		position: absolute;
 		right: 12%;
