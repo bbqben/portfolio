@@ -1,0 +1,38 @@
+.aboutMe {
+	background: #F6F6F6;
+	.aboutMe__wrapper {
+		max-width: 60%;
+		padding: 120px 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.aboutMe__image {
+			padding: 0 35px;
+			border-radius: 50%;
+		}
+		.aboutMe__description {
+			
+			width: 45%;
+			padding: 0 35px;
+			p {
+				
+				margin: 0;
+			}
+		}
+		.aboutMe__name {
+			text-transform: uppercase;
+			font-weight: 900;
+			font-size: 4rem;
+		}
+		.aboutMe__title {
+			font-size: 1.8rem;
+		}
+		.aboutMe__lineBreak {
+			font-size: 2rem;
+			line-height: 3.8rem;
+		}
+		.aboutMe__bio {
+			font-size: 1.8rem;
+		}
+	}
+}

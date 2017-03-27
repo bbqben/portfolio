@@ -136,7 +136,7 @@ a, a:visited {
   color: black; }
 
 header {
-  min-height: 20vh; }
+  min-height: 13vh; }
   header .header__wrapper {
     display: -ms-flexbox;
     display: flex;
@@ -146,9 +146,10 @@ header {
         justify-content: space-between;
     padding: 25px 0; }
     header .header__wrapper .logo {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       padding: 20px 0;
-      font-size: 7rem;
-      font-weight: 900; }
+      font-size: 6rem;
+      line-height: 3rem; }
     header .header__wrapper .links {
       display: -ms-flexbox;
       display: flex;
@@ -172,11 +173,12 @@ header {
           padding-bottom: 0; }
 
 .splash {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://unsplash.it/3840/2160");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/background.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 75%;
-  min-height: 80vh;
+  background-attachment: inherit;
+  min-height: 82vh;
   position: relative; }
   .splash .splash__words {
     position: absolute;
@@ -197,9 +199,132 @@ header {
       position: relative;
       left: 50px; }
 
+.aboutMe {
+  background: #F6F6F6; }
+  .aboutMe .aboutMe__wrapper {
+    max-width: 60%;
+    padding: 120px 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .aboutMe .aboutMe__wrapper .aboutMe__image {
+      padding: 0 35px;
+      border-radius: 50%; }
+    .aboutMe .aboutMe__wrapper .aboutMe__description {
+      width: 45%;
+      padding: 0 35px; }
+      .aboutMe .aboutMe__wrapper .aboutMe__description p {
+        margin: 0; }
+    .aboutMe .aboutMe__wrapper .aboutMe__name {
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 4rem; }
+    .aboutMe .aboutMe__wrapper .aboutMe__title {
+      font-size: 1.8rem; }
+    .aboutMe .aboutMe__wrapper .aboutMe__lineBreak {
+      font-size: 2rem;
+      line-height: 3.8rem; }
+    .aboutMe .aboutMe__wrapper .aboutMe__bio {
+      font-size: 1.8rem; }
+
+.skills {
+  padding-bottom: 85px; }
+  .skills .skills__missionStatement {
+    display: -ms-flexbox;
+    display: flex;
+    padding: 120px 0;
+    width: 80%;
+    margin: 0 auto; }
+    .skills .skills__missionStatement .missionStatement__container {
+      position: relative;
+      width: 50%;
+      padding-top: 65px; }
+      .skills .skills__missionStatement .missionStatement__container .section__bgChar {
+        z-index: -10;
+        margin: 0;
+        color: #F6F6F6;
+        position: absolute;
+        font-size: 15rem;
+        line-height: 0;
+        top: 65px;
+        font-style: italic;
+        font-family: roboto;
+        font-weight: 700; }
+      .skills .skills__missionStatement .missionStatement__container .section__title {
+        z-index: 10;
+        position: relative;
+        font-size: 2.8rem;
+        line-height: 0;
+        padding-left: 40px;
+        padding-top: 30px;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 1.6rem;
+        font-family: roboto;
+        font-style: italic; }
+    .skills .skills__missionStatement .missionStatement__description {
+      font-family: roboto;
+      width: 50%;
+      font-size: 1.6rem;
+      line-height: 2.4rem; }
+  .skills .skills__list .skills__list__row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+  .skills .skills__list .skill {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    margin: 0 auto 40px auto;
+    width: 33.3%; }
+    .skills .skills__list .skill img {
+      display: block;
+      margin: 0 auto;
+      width: 150px;
+      padding-bottom: 35px; }
+    .skills .skills__list .skill p {
+      font-size: 2.8rem;
+      margin: 0;
+      text-align: center; }
+
 .wrapper {
   max-width: 70%;
   margin: 0 auto; }
 
-.aboutMe {
+.myWorks .myWorks__wrapper {
+  max-width: 70%;
   background: red; }
+  .myWorks .myWorks__wrapper .project {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .myWorks .myWorks__wrapper .project .project__image {
+      width: 60%; }
+      .myWorks .myWorks__wrapper .project .project__image img {
+        width: 100%;
+        padding: 35px; }
+    .myWorks .myWorks__wrapper .project .project__description {
+      width: 40%;
+      padding: 0 50px;
+      font-size: 1.6rem;
+      line-height: 3.8rem; }
+      .myWorks .myWorks__wrapper .project .project__description p {
+        font-family: roboto;
+        margin: 0; }
+      .myWorks .myWorks__wrapper .project .project__description p:first-child {
+        font-size: 2.4rem;
+        font-weight: 900;
+        margin-bottom: 20px; }
+  .myWorks .myWorks__wrapper .project:nth-of-type(even) {
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse; }

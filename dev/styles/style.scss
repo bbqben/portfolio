@@ -1,5 +1,7 @@
 @import 'partials/setup';
 @import 'partials/headerSplash';
+@import 'partials/aboutMe';
+@import 'partials/skills';
 
 .wrapper {
 	max-width: 70%;
@@ -7,6 +9,41 @@
 }
 
 
-.aboutMe {
-	background: red;
+.myWorks {
+	.myWorks__wrapper {
+		max-width: 70%;
+		background: red;
+		.project {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			// margin: 25px 0;
+			.project__image {
+				width: 60%;
+				img {
+					width: 100%;
+					padding: 35px;
+				}
+			}
+			.project__description {
+				width: 40%;
+				padding: 0 50px;
+				font-size: 1.6rem;
+				line-height: 3.8rem;
+				p {
+					font-family: roboto;
+					margin: 0;
+				}
+				p:first-child {
+					font-size: 2.4rem;
+					font-weight: 900;
+					margin-bottom: 20px;
+				}
+			}
+		}
+		.project:nth-of-type(even) {
+			flex-direction: row-reverse;
+		}
+	}
 }

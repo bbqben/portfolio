@@ -1,14 +1,15 @@
 header {
-	min-height: 20vh;
+	min-height: 13vh;
 	.header__wrapper {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		padding: 25px 0;
 		.logo {
-		padding: 20px 0;
-			font-size: 7rem;
-			font-weight: 900;
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			padding: 20px 0;
+			font-size: 6rem;
+			line-height: 3rem;
 		}
 		.links {
 			display: flex;
@@ -38,11 +39,12 @@ header {
 }
 
 .splash {
-	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://unsplash.it/3840/2160");
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/background.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center 75%;
-	min-height: 80vh;
+	background-attachment: inherit;
+	min-height: 82vh;
 	position: relative;
 	.splash__words {
 		position: absolute;

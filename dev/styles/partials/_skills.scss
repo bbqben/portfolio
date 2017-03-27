@@ -1,0 +1,70 @@
+.skills {
+	padding-bottom: 85px;
+	.skills__missionStatement {
+		display: flex;
+		padding: 120px 0;
+		width: 80%;
+		margin: 0 auto;
+		.missionStatement__container{
+			position: relative;
+			width: 50%;
+			padding-top: 65px;
+			.section__bgChar{
+				z-index: -10;
+				margin: 0;
+				color: #F6F6F6;
+				position: absolute;
+				font-size: 15rem;
+				line-height: 0;
+				top: 65px;
+				font-style: italic;
+				font-family: roboto;
+				font-weight: 700;
+			}
+			.section__title{
+				z-index: 10;
+				position: relative;
+				font-size: 2.8rem;
+				line-height: 0;
+				padding-left: 40px;
+				padding-top: 30px;
+				margin: 0;
+				text-transform: uppercase;
+				letter-spacing: 1.6rem;
+				font-family: roboto;
+				font-style: italic;
+			}
+		}
+		.missionStatement__description{
+			font-family: roboto;
+			width: 50%;
+			font-size: 1.6rem;
+			line-height: 2.4rem;
+		}
+	}
+
+	.skills__list {
+		.skills__list__row {
+			display: flex;
+			flex-direction: row;
+		}
+		.skill {
+			display: flex;
+			flex-direction: column-reverse;
+			// background: red;
+			margin: 0 auto 40px auto;
+			width: 33.3%;
+			img {
+				display: block;
+				margin: 0 auto;
+				width: 150px;
+				padding-bottom: 35px;
+			}
+			p {
+				font-size: 2.8rem;
+				margin: 0;
+				text-align: center;
+			}
+		}
+	}
+}
