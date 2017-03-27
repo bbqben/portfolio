@@ -1,7 +1,7 @@
 .aboutMe {
 	background: #F6F6F6;
 	.aboutMe__wrapper {
-		max-width: 60%;
+		max-width: 85%;
 		padding: 120px 0;
 		display: flex;
 		justify-content: center;
@@ -9,6 +9,8 @@
 		.aboutMe__image {
 			padding: 0 35px;
 			border-radius: 50%;
+			width: 450px;
+
 		}
 		.aboutMe__description {
 			

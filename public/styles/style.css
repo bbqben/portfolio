@@ -144,12 +144,14 @@ header {
         flex-direction: row;
     -ms-flex-pack: justify;
         justify-content: space-between;
-    padding: 25px 0; }
+    padding: 25px 0;
+    text-transform: uppercase; }
     header .header__wrapper .logo {
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       padding: 20px 0;
       font-size: 6rem;
-      line-height: 3rem; }
+      line-height: 3rem;
+      font-weight: 400; }
     header .header__wrapper .links {
       display: -ms-flexbox;
       display: flex;
@@ -161,19 +163,37 @@ header {
         font-size: 1.6rem;
         text-align: right; }
         header .header__wrapper .links .links__socialMedia i {
-          padding: 0 20px; }
+          padding: 0 20px;
+          color: #000;
+          transition: color 0.2s ease; }
+        header .header__wrapper .links .links__socialMedia i:hover {
+          color: #7dddf9; }
       header .header__wrapper .links .links__website {
         font-size: 1.8rem; }
         header .header__wrapper .links .links__website a {
           display: inline-block;
           margin: 0 20px;
-          padding-bottom: 1px; }
-        header .header__wrapper .links .links__website a:hover {
-          border-bottom: 1px solid red;
-          padding-bottom: 0; }
+          padding-bottom: 1px;
+          font-weight: 100;
+          position: relative; }
+        header .header__wrapper .links .links__website a:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: -3px;
+          left: 0;
+          background-color: #7dddf9;
+          visibility: hidden;
+          transform: scaleX(0);
+          transition: all 0.3s ease-in-out 0s; }
+        header .header__wrapper .links .links__website a:hover:before {
+          visibility: visible;
+          transform: scaleX(1); }
 
 .splash {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/background.jpeg");
+  background: url("../assets/background.jpeg");
+  opacity: 0.9;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 75%;
@@ -182,12 +202,12 @@ header {
   position: relative; }
   .splash .splash__words {
     position: absolute;
-    right: 15%;
-    top: 45%; }
+    right: 12%;
+    top: 40%; }
     .splash .splash__words p {
       display: block;
       line-height: 4rem;
-      font-size: 5rem;
+      font-size: 5.2rem;
       color: white;
       margin: 0;
       text-transform: uppercase; }
@@ -202,7 +222,7 @@ header {
 .aboutMe {
   background: #F6F6F6; }
   .aboutMe .aboutMe__wrapper {
-    max-width: 60%;
+    max-width: 85%;
     padding: 120px 0;
     display: -ms-flexbox;
     display: flex;
@@ -212,7 +232,8 @@ header {
         align-items: center; }
     .aboutMe .aboutMe__wrapper .aboutMe__image {
       padding: 0 35px;
-      border-radius: 50%; }
+      border-radius: 50%;
+      width: 450px; }
     .aboutMe .aboutMe__wrapper .aboutMe__description {
       width: 45%;
       padding: 0 35px; }
@@ -233,23 +254,22 @@ header {
 .skills {
   padding-bottom: 85px; }
   .skills .skills__missionStatement {
-    display: -ms-flexbox;
-    display: flex;
     padding: 120px 0;
-    width: 80%;
-    margin: 0 auto; }
+    width: 85%;
+    margin: 0 auto;
+    text-align: center; }
     .skills .skills__missionStatement .missionStatement__container {
       position: relative;
-      width: 50%;
       padding-top: 65px; }
       .skills .skills__missionStatement .missionStatement__container .section__bgChar {
         z-index: -10;
         margin: 0;
-        color: #F6F6F6;
-        position: absolute;
+        color: rgba(125, 221, 249, 0.4);
+        position: relative;
+        right: 60px;
+        top: 10px;
         font-size: 15rem;
         line-height: 0;
-        top: 65px;
         font-style: italic;
         font-family: roboto;
         font-weight: 700; }
@@ -265,16 +285,13 @@ header {
         letter-spacing: 1.6rem;
         font-family: roboto;
         font-style: italic; }
-    .skills .skills__missionStatement .missionStatement__description {
-      font-family: roboto;
-      width: 50%;
-      font-size: 1.6rem;
-      line-height: 2.4rem; }
   .skills .skills__list .skills__list__row {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
-        flex-direction: row; }
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center; }
   .skills .skills__list .skill {
     display: -ms-flexbox;
     display: flex;
@@ -285,15 +302,23 @@ header {
     .skills .skills__list .skill img {
       display: block;
       margin: 0 auto;
-      width: 150px;
+      width: 200px;
       padding-bottom: 35px; }
     .skills .skills__list .skill p {
       font-size: 2.8rem;
       margin: 0;
       text-align: center; }
+  .skills .skills__list .row1__skill4 img {
+    width: 225px; }
+  .skills .skills__list .row2__skill1 img {
+    width: 260px; }
+  .skills .skills__list .row2__skill3 img {
+    width: 230px; }
+  .skills .skills__list .row3__skill1 img {
+    width: 250px; }
 
 .wrapper {
-  max-width: 70%;
+  max-width: 85%;
   margin: 0 auto; }
 
 .myWorks .myWorks__wrapper {
