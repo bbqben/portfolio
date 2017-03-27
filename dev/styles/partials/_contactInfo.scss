@@ -1,0 +1,79 @@
+.contact {
+	padding: 70px 0;
+	.contact__sectionTitle {
+		background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../assets/map.jpeg");
+		min-height: 25vh;
+		background-size: 120%;
+		background-position: 55% 43%;
+		filter: grayscale(100%);
+		p {
+			text-align: center;
+			display: block;
+			padding: 130px;
+			font-size: 4rem;
+			font-weight: 700;
+			letter-spacing: 2.5rem;
+			text-transform: uppercase;
+		}
+	}
+	.contactInfo {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		padding-bottom: 50px;
+		font-size: 2.4rem;
+		text-transform: uppercase;
+		position: relative;
+		div i {
+			padding-right: 100px;
+		}
+		div .underline::after {
+				content: "\00a0";
+				padding: 10px;
+				font-size: 4rem;
+				width: 30%;
+				border-top: 1px solid black;
+				position: absolute;
+				transform: rotate(-35deg);
+				left: 70px;
+				bottom: -20px;
+		}
+		.contactInfo__email {
+			font-size: 4rem;
+			position: relative;
+			padding: 45px;
+			.email__content {
+				position: absolute;
+				font-size: 1.8rem;
+				bottom: 10px;
+				left: 100px;
+			}
+		}
+		.contactInfo__twitter {
+			font-size: 4rem;
+			position: relative;
+			padding: 45px;
+			.twitter__content {
+				position: absolute;
+				font-size: 1.8rem;
+				bottom: 10px;
+				left: 100px;
+			}
+		}
+		.contactInfo__linkedin {
+			font-size: 4rem;
+			position: relative;
+			padding: 45px;
+			.linkedin__content {
+				position: absolute;
+				font-size: 1.8rem;
+				bottom: 10px;
+				left: 100px;
+			}
+		}
+
+
+
+	}
+}

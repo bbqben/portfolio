@@ -341,10 +341,12 @@ header {
         width: 50%; }
         .myWorks .myWorks__wrapper .project .project__image img {
           width: 100%;
-          padding: 35px; }
+          margin: 35px;
+          border: 1px solid black; }
+      .myWorks .myWorks__wrapper .project .project__description:nth-of-type(even) {
+        margin-left: 75px; }
       .myWorks .myWorks__wrapper .project .project__description {
         width: 50%;
-        padding: 0 50px;
         font-size: 1.6rem;
         line-height: 3.8rem; }
         .myWorks .myWorks__wrapper .project .project__description p {
@@ -364,12 +366,128 @@ header {
             margin-right: 5px;
             transition: all 0.2s ease; }
           .myWorks .myWorks__wrapper .project .project__description .tags span:hover {
-            background: #f0cb59;
+            background: #f0ac3a;
             color: white; }
     .myWorks .myWorks__wrapper .project:nth-of-type(even) {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse; }
 
+.contact {
+  padding: 70px 0; }
+  .contact .contact__sectionTitle {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../assets/map.jpeg");
+    min-height: 25vh;
+    background-size: 120%;
+    background-position: 55% 43%;
+    filter: grayscale(100%); }
+    .contact .contact__sectionTitle p {
+      text-align: center;
+      display: block;
+      padding: 130px;
+      font-size: 4rem;
+      font-weight: 700;
+      letter-spacing: 2.5rem;
+      text-transform: uppercase; }
+  .contact .contactInfo {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-bottom: 50px;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    position: relative; }
+    .contact .contactInfo div i {
+      padding-right: 100px; }
+    .contact .contactInfo div .underline::after {
+      content: "\00a0";
+      padding: 10px;
+      font-size: 4rem;
+      width: 30%;
+      border-top: 1px solid black;
+      position: absolute;
+      transform: rotate(-35deg);
+      left: 70px;
+      bottom: -20px; }
+    .contact .contactInfo .contactInfo__email {
+      font-size: 4rem;
+      position: relative;
+      padding: 45px; }
+      .contact .contactInfo .contactInfo__email .email__content {
+        position: absolute;
+        font-size: 1.8rem;
+        bottom: 10px;
+        left: 100px; }
+    .contact .contactInfo .contactInfo__twitter {
+      font-size: 4rem;
+      position: relative;
+      padding: 45px; }
+      .contact .contactInfo .contactInfo__twitter .twitter__content {
+        position: absolute;
+        font-size: 1.8rem;
+        bottom: 10px;
+        left: 100px; }
+    .contact .contactInfo .contactInfo__linkedin {
+      font-size: 4rem;
+      position: relative;
+      padding: 45px; }
+      .contact .contactInfo .contactInfo__linkedin .linkedin__content {
+        position: absolute;
+        font-size: 1.8rem;
+        bottom: 10px;
+        left: 100px; }
+
 .wrapper {
   max-width: 85%;
   margin: 0 auto; }
+
+.contactForm {
+  max-width: 80%;
+  margin: 0 auto; }
+  .contactForm .contactFormInput {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .contactForm .contactFormInput div {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      width: 30%; }
+      .contactForm .contactFormInput div label {
+        font-size: 1.8rem;
+        margin-bottom: 10px; }
+      .contactForm .contactFormInput div input {
+        font-size: 2.4rem;
+        padding: 10px;
+        outline: none; }
+    .contactForm .contactFormInput .contactForm__message {
+      margin: 30px auto;
+      width: 100%; }
+      .contactForm .contactFormInput .contactForm__message textarea {
+        outline: none;
+        font-size: 2.4rem;
+        padding: 10px;
+        height: 300px; }
+  .contactForm input[type=submit] {
+    display: block;
+    margin: 0 auto;
+    padding: 25px 75px;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    background: #373737;
+    outline: none;
+    border: none;
+    color: white; }
+  .contactForm input[type=submit]:hover {
+    background: #f0ac3a;
+    color: #373737; }

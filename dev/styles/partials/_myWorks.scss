@@ -3,7 +3,6 @@
 	padding: 65px 0;
 	.myWorks__wrapper {
 		max-width: 70%;
-		// background: red;
 		.project {
 			display: flex;
 			flex-direction: row;
@@ -14,12 +13,17 @@
 				width: 50%;
 				img {
 					width: 100%;
-					padding: 35px;
+					margin: 35px;
+					border: 1px solid black;
 				}
+			}
+			.project__description:nth-of-type(even) {
+				margin-left: 75px;
+				// padding-left: 35px;
 			}
 			.project__description {
 				width: 50%;
-				padding: 0 50px;
+				// padding: 0 50px;
 				font-size: 1.6rem;
 				line-height: 3.8rem;
 				p {

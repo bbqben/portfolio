@@ -125,7 +125,9 @@
 
 				<div class="myWorks__row project1 project">
 					<div class="project1__image project__image">
-						<img src="http://unsplash.it/1920/1080" alt="">
+						<a href="http://bentran.io/appercise">
+							<img src="./public/assets/appercise.png" alt="">
+						</a>
 					</div>
 					<div class="project1__description project__description">
 						<p>Appercise</p>
@@ -142,9 +144,12 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ut repellat quos possimus aperiam tenetur labore ab eveniet impedit eligendi autem vel praesentium, quaerat neque laborum iusto excepturi id, amet!</p>
 					</div>
 				</div>
+
 				<div class="myWorks__row project2 project">
 					<div class="project2__image project__image">
-						<img src="http://unsplash.it/1920/1080" alt="">
+						<a href="http://bentran.io/pokemon">
+							<img src="./public/assets/pokemon.png" alt="">
+						</a>
 					</div>
 					<div class="project2__description project__description">
 						<p>Pokemon-Human Comparison App</p>
@@ -161,9 +166,12 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus mollitia voluptate, debitis ullam ut sed, explicabo consectetur! Iusto laudantium odit dolores quia, blanditiis nobis quaerat dignissimos similique, natus et rerum!</p>
 					</div>
 				</div>
+
 				<div class="myWorks__row project3 project">
 					<div class="project3__image project__image">
-						<img src="http://unsplash.it/1080/720" alt="">
+						<a href="http://bentran.io/makeup">
+							<img src="./public/assets/makeup.png" alt="">
+						</a>
 					</div>
 					<div class="project3__description project__description">
 						<p>Makeup On A Budget</p>
@@ -180,9 +188,12 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis natus ipsum voluptatibus eveniet eius voluptates, laboriosam mollitia numquam veniam atque magni a! Eos eaque ex, delectus repellat cumque, quam.</p>
 					</div>
 				</div>
+
 				<div class="myWorks__row project4 project">
 					<div class="project4__image project__image">
-						<img src="http://unsplash.it/1920/1080" alt="">
+						<a href="http://bentran.io/postcard">
+							<img src="./public/assets/postcard.png" alt="">
+						</a>
 					</div>
 					<div class="project4__description project__description">
 						<p>Postcard Generator</p>
@@ -196,9 +207,12 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est illum deserunt, quia incidunt dolorum id laudantium tempore hic in consectetur quisquam. Cumque reiciendis voluptatibus eveniet labore qui ut quo quae!</p>
 					</div>
 				</div>
+
 				<div class="myWorks__row project5 project">
 					<div class="project5__image project__image">
-						<img src="http://unsplash.it/1920/1080" alt="">
+						<a href="http://bentran.io/bakery">
+							<img src="./public/assets/bakery.png" alt="">
+						</a>
 					</div>
 					<div class="project5__description project__description">
 						<p>Bakery Website</p>
@@ -217,19 +231,56 @@
 
 		<section class="contact">
 			<div class="contact__sectionTitle">
+				<p>Get In Touch</p>
 			</div>
 			<div class="wrapper contact__wrapper">
 				<div class="contactInfo">
-					<div>Email</div>
-					<div>Twitter</div>
-					<div>LinkedIn</div>
+					<div class="contactInfo__email">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+						<div class="underline"></div>
+						<div class="email__content">bbentran@gmail.com</div>
+					</div>
+					<div class="contactInfo__twitter">
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+						<div class="underline"></div>
+						<div class="twitter__content">@BenTranCodes</div>
+					</div>
+					<div class="contactInfo__linkedin">
+					<i class="fa fa-linkedin" aria-hidden="true"></i>
+						<div class="underline"></div>
+						<div class="linkedin__content">Ben Tran</div>
+					</div>
 				</div>
-				<form  class="contactForm">
-					<input type="text" name="name">
-					<input type="text" name="email">
-					<input type="text" name="subject">
-					<input type="textarea" name="message">
-					<button>Send Message</button>
+
+
+				<form action="https://formspree.io/bbentran@gmail.com" method="POST" class="contactForm">
+
+					<div class="contactFormInput">
+						
+						<div class="contactForm__name">
+							<label for="name">Name *</label>
+							<input type="text" name="name">
+						</div>
+
+						<div class="contactForm__email">
+							<label for="email">Email *</label>
+							<input type="text" name="email">
+						</div>
+
+
+						<div class="contactForm__subject">
+							<label for="subject">Subject</label>
+							<input type="text" name="subject">
+						</div>
+
+
+						<div class="contactForm__message">
+							<label for="message">Message *</label>
+							<textarea name="message"></textarea>
+						</div>
+					</div>
+
+					<input type="submit" value="Send Message"></input>
 				</form>
 			</div>
 		</section>
