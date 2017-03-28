@@ -48,6 +48,7 @@
 		.skill {
 			display: flex;
 			flex-direction: column-reverse;
+			flex-wrap: wrap;
 			// background: red;
 			margin: 0 auto 40px auto;
 			width: 33.3%;
@@ -71,9 +72,6 @@
 		}
 		.row2__skill3 img {
 			width: 230px;
-		}
-		.row3__skill1 img {
-			width: 250px;
 		}
 	}
 }

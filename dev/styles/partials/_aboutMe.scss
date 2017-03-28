@@ -1,8 +1,45 @@
 .aboutMe {
 	background: #F6F6F6;
+	padding: 170px 0 120px 0;
+
+
+	.title__container {
+		position: relative;
+		// width: 50%;
+		padding-bottom: 105px;
+		margin: 0 auto;
+		text-align: center;
+		.container__bgChar {
+			
+			margin: 0;
+			color: rgba(125, 221, 249, 0.4);
+			position: relative;
+			left: -95px;
+			font-size: 15rem;
+			line-height: 0;
+			// top: 65px;
+			font-style: italic;
+			font-family: roboto;
+			font-weight: 700;
+		}
+		.container__title {
+			z-index: 10;
+			position: relative;
+			font-size: 2.8rem;
+			line-height: 0;
+			padding-left: 40px;
+			padding-top: 30px;
+			margin: 0;
+			text-transform: uppercase;
+			letter-spacing: 1.6rem;
+			font-family: roboto;
+			font-style: italic;
+		}
+	}
+
+
 	.aboutMe__wrapper {
 		max-width: 85%;
-		padding: 120px 0;
 		display: flex;
 		justify-content: center;
 		align-items: center;

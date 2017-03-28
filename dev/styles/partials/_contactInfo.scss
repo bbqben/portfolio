@@ -1,11 +1,11 @@
 .contact {
 	padding: 70px 0;
 	.contact__sectionTitle {
-		background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../assets/map.jpeg");
+		background:  url("../assets/map.jpeg");
 		min-height: 25vh;
 		background-size: 120%;
 		background-position: 55% 43%;
-		filter: grayscale(100%);
+		filter: grayscale(70%);
 		p {
 			text-align: center;
 			display: block;
@@ -43,37 +43,99 @@
 			font-size: 4rem;
 			position: relative;
 			padding: 45px;
+			color: $color-blue;
 			.email__content {
 				position: absolute;
 				font-size: 1.8rem;
 				bottom: 10px;
 				left: 100px;
+				color: black;
 			}
 		}
 		.contactInfo__twitter {
 			font-size: 4rem;
 			position: relative;
 			padding: 45px;
+			color: $color-blue;
 			.twitter__content {
 				position: absolute;
 				font-size: 1.8rem;
 				bottom: 10px;
 				left: 100px;
+				color: black;
 			}
 		}
 		.contactInfo__linkedin {
 			font-size: 4rem;
 			position: relative;
 			padding: 45px;
+			color: $color-blue;
 			.linkedin__content {
 				position: absolute;
 				font-size: 1.8rem;
 				bottom: 10px;
 				left: 100px;
+				color: black;
 			}
 		}
 
 
 
 	}
+
+
+
+	.contactForm {
+		max-width: 80%;
+		margin: 0 auto;
+		.contactFormInput {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			div {
+				display: flex;
+				flex-direction: column;
+				width: 30%;
+				label {
+					font-size: 1.8rem;
+					margin-bottom: 10px;
+				}
+				input {
+					font-size: 2.4rem;
+					padding: 10px;
+					outline: none;
+				}
+				input:active {
+				}
+			}
+			.contactForm__message {
+				margin: 30px auto;
+				width: 100%;
+				textarea {
+					outline: none;
+					font-size: 2.4rem;
+					padding: 10px;
+					height: 300px;
+				}
+			}
+		}
+
+		input[type=submit] {
+			display: block;
+			margin: 0 auto;
+			padding: 25px 75px;
+			text-transform: uppercase;
+			font-size: 1.8rem;
+			background: #373737;
+			outline: none;
+			border: none;
+			color: white;
+		}
+		input[type=submit]:hover {
+			background: $color-blue;
+			color: #373737;
+		}
+	}
+	
 }

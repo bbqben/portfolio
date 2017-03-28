@@ -1,16 +1,16 @@
 header {
-	min-height: 13vh;
+	min-height: 20vh;
 	.header__wrapper {
+		min-height: 20vh;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		padding: 25px 0;
+		padding: 35px 0;
 		text-transform: uppercase;
 		.logo {
 			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 			padding: 20px 0;
 			font-size: 6rem;
-			line-height: 3rem;
 			font-weight: 400;
 		}
 		.links {
@@ -69,12 +69,12 @@ header {
 }
 
 .splash {
-	background: url("../assets/background.jpeg");
+	background: url("../assets/background/bgoriginal.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 100%;
 	background-attachment: fixed;
-	min-height: 82vh;
+	min-height: 70vh;
 	position: relative;
 	opacity: 0.95;
 	.splash__words {
@@ -99,5 +99,64 @@ header {
 			position: relative;
 			left: 50px;
 		}
+	}
+}
+
+
+
+
+
+@media (max-width: 2880px) {
+	.splash {
+		background: url("../assets/background/bg2880w.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 100%;
+		background-attachment: fixed;
+	}
+}
+@media (max-width: 1920px) {
+	.splash {
+		background: url("../assets/background/bg1920w.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 100%;
+		background-attachment: fixed;
+	}
+}
+@media (max-width: 1280px) {
+	.splash {
+		background: url("../assets/background/bg1280w.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 100%;
+		background-attachment: fixed;
+	}
+}
+@media (max-width: 1024px) {
+	.splash {
+		background: url("../assets/background/bg1024w.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 100%;
+		background-attachment: fixed;
+	}
+}
+@media (max-width: 960px) {
+	.splash {
+		background: url("../assets/background/bg960w.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 100%;
+		background-attachment: fixed;
+	}
+}
+@media (max-width: 800px) {
+	.splash {
+		background: url("../assets/background/bg800w.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 100%;
+		background-attachment: fixed;
 	}
 }

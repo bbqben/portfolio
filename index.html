@@ -16,15 +16,16 @@
 				</div>
 				<div class="links">
 					<div class="links__socialMedia">
-						<i class="fa fa-twitter" aria-hidden="true"></i>
-						<i class="fa fa-github-alt" aria-hidden="true"></i>
-						<i class="fa fa-linkedin" aria-hidden="true"></i>
-						<i class="fa fa-envelope" aria-hidden="true"></i>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
 					</div>
 					<nav class="links__website">
-						<a href="#">About Me</a>
-						<a href="#">Portfolio</a>
-						<a href="#">Contact</a>
+						<a href="#aboutMe">About Me</a>
+						<a href="#skills">Skills</a>
+						<a href="#myWorks">Portfolio</a>
+						<a href="#contact">Contact</a>
 					</nav>
 				</div>
 			</div>
@@ -37,8 +38,19 @@
 			</div>
 		</section>
 
-		<section class="aboutMe">
+		<section class="aboutMe" id="aboutMe">
+
+
+			<div class="title__aboutMe">
+				<div class="title__container">
+					<p class="container__bgChar">A</p>
+					<p class="container__title">About Me</p>
+				</div>
+			</div>
+
 			<div class="wrapper aboutMe__wrapper">
+
+
 				<div class="aboutMe__image">
 					<img src="./public/assets/me.jpg" alt="A beautiful image of the Front-End Developer Ben Tran" class="aboutMe__image">
 				</div>
@@ -51,7 +63,7 @@
 			</div>
 		</section>
 
-		<section class="skills">
+		<section class="skills" id="skills">
 			<div class="wrapper skills__wrapper">
 
 
@@ -92,7 +104,7 @@
 
 					<div class="skills__list__row2 skills__list__row">
 						<div class="skill row2__skill1">
-							<img src="./public/assets/devicon-master/icons/git/git-original-wordmark.svg" alt="Git logo">
+							<img src="./public/assets/devicon-master/icons/gulp/gulp-plain.svg" alt="Gulp logo">
 
 						</div>
 						<div class="skill row2__skill2">
@@ -109,18 +121,17 @@
 						</div>
 					</div>
 
-
-					<div class="skills__list__row3 skills__list__row">
-						<div class="skill row3__skill1">
-							<img src="./public/assets/devicon-master/icons/gulp/gulp-plain.svg" alt="Gulp logo">
-
-						</div>
-					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="myWorks">
+		<section class="myWorks" id="myWorks">
+
+			<div class="title__container">
+				<p class="container__bgChar">P</p>
+				<p class="container__title">Portfolio</p>
+			</div>
+
 			<div class="wrapper myWorks__wrapper">
 
 				<div class="myWorks__row project1 project">
@@ -137,9 +148,8 @@
 							<span>jQuery</span>
 							<span>HTML5</span>
 							<span>CSS3</span>
-							<span>RESPONSIVE WEB DESIGN</span>
-							<span>GITHUB</span>
-							<span>GIT COMMAND</span>
+							<span>RWD</span>
+							<span>GIT</span>
 						</div>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ut repellat quos possimus aperiam tenetur labore ab eveniet impedit eligendi autem vel praesentium, quaerat neque laborum iusto excepturi id, amet!</p>
 					</div>
@@ -157,11 +167,10 @@
 							<span>jQuery</span>
 							<span>API</span>
 							<span>JAVASCRIPT</span>
-							<span>RESPONSIVE WEB DESIGN</span>
+							<span>RWD</span>
 							<span>HTML5</span>
 							<span>CSS3</span>
-							<span>GITHUB</span>
-							<span>GIT COMMAND</span>
+							<span>GIT</span>
 						</div>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus mollitia voluptate, debitis ullam ut sed, explicabo consectetur! Iusto laudantium odit dolores quia, blanditiis nobis quaerat dignissimos similique, natus et rerum!</p>
 					</div>
@@ -181,9 +190,8 @@
 							<span>PAIR PROGRAMMING</span>
 							<span>HTML5</span>
 							<span>CSS3</span>
-							<span>RESPONSIVE WEB DESIGN</span>
-							<span>GITHUB</span>
-							<span>GIT COMMAND</span>
+							<span>RWD</span>
+							<span>GIT</span>
 						</div>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis natus ipsum voluptatibus eveniet eius voluptates, laboriosam mollitia numquam veniam atque magni a! Eos eaque ex, delectus repellat cumque, quam.</p>
 					</div>
@@ -199,7 +207,7 @@
 						<p>Postcard Generator</p>
 						<div class="tags">
 							<span>JAVASCRIPT</span>
-							<span>RESPONSIVE WEB DESIGN</span>
+							<span>RWD</span>
 							<span>PAIR PROGRAMMING</span>
 							<span>HTML5</span>
 							<span>CSS3</span>
@@ -218,7 +226,7 @@
 						<p>Bakery Website</p>
 						<div class="tags">
 							<span>PSD TO HTML CONVERSION</span>
-							<span>RESPONSIVE WEB DESIGN</span>
+							<span>RWD</span>
 							<span>HTML5</span>
 							<span>CSS3</span>
 						</div>
@@ -229,7 +237,7 @@
 			</div>
 		</section>
 
-		<section class="contact">
+		<section class="contact" id="contact">
 			<div class="contact__sectionTitle">
 				<p>Get In Touch</p>
 			</div>
@@ -259,12 +267,12 @@
 						
 						<div class="contactForm__name">
 							<label for="name">Name *</label>
-							<input type="text" name="name">
+							<input type="text" name="name" required>
 						</div>
 
 						<div class="contactForm__email">
 							<label for="email">Email *</label>
-							<input type="text" name="email">
+							<input type="text" name="email" required>
 						</div>
 
 
@@ -276,7 +284,7 @@
 
 						<div class="contactForm__message">
 							<label for="message">Message *</label>
-							<textarea name="message"></textarea>
+							<textarea name="message" required></textarea>
 						</div>
 					</div>
 
