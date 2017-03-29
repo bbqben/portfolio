@@ -5,29 +5,30 @@
 		<title>BenTranCodes</title>
 		<link rel="stylesheet" href="./public/styles/style.css">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,700i" rel="stylesheet">
 	</head>
 	
 	<body>
 		<header>
 			<div class="wrapper header__wrapper">
-				<div class="logo">
-					BEN TRAN
-				</div>
 				<div class="links">
-					<div class="links__socialMedia">
-						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+					<div class="logo">
+						BEN TRAN
 					</div>
-					<nav class="links__website">
-						<a href="#aboutMe">About Me</a>
-						<a href="#skills">Skills</a>
-						<a href="#myWorks">Portfolio</a>
-						<a href="#contact">Contact</a>
-					</nav>
+					<div class="links__socialMedia">
+						<a href="https://twitter.com/bentrancodes"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="https://github.com/benTranCodes/"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+						<a href="https://www.linkedin.com/in/ben-tran-62343485"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+						<a href="mailto:bbentran@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+					</div>
 				</div>
+				<nav class="links__website">
+					<a href="#aboutMe">About Me</a>
+					<a href="#skills">Skills</a>
+					<a href="#myWorks">Portfolio</a>
+					<a href="#contact">Contact</a>
+				</nav>
 			</div>
 		</header>
 
@@ -57,8 +58,11 @@
 				<div class="aboutMe__description">
 					<p class="aboutMe__name">Ben Tran</p>
 					<p class="aboutMe__title">Front End Developer</p>
-					<p class="aboutMe__lineBreak">____</p>
-					<p class="aboutMe__bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime expedita, eos deleniti ex sapiente molestiae exercitationem dolorem quaerat ullam, deserunt iusto blanditiis tempore vero minus unde, quisquam. Eaque harum beatae expedita laboriosam quaerat, mollitia reprehenderit quis aliquid adipisci possimus accusamus eos facilis pariatur illo debitis soluta quam nesciunt id, error ullam dignissimos iste ea. Quas ipsa cum ut voluptatum quidem.</p>
+					<div class="aboutMe__lineBreak"></div>
+					<div class="aboutMe__bio">
+						<p>Hi! I'm Ben, a Front-end Web Developer based in Toronto. I'm a graduate from the Web Development Immersive program at HackerYou and a member of Cohort 13 'Initial Reaction'. Previously I studied at the University of Ontario Institute of Technology and graduated with a Bachelor of Information Technology. I enjoy collaborating with others to be able to write DRY code, and love tackling complicated challenges. I'm motivated to challenge myself to be better at what I do every single day and to never stop learning. On the off times that I'm not coding, you can find me being a nerd playing video games or with my camera learning more about photography.</p>
+
+					</div>
 				</div>
 			</div>
 		</section>
@@ -121,18 +125,29 @@
 						</div>
 					</div>
 
+
+					<div class="skills__list__row3 skills__list__row">
+						<div class="skill row3__skill1">
+							<img src="./public/assets/api.svg" alt="API logo">
+
+						</div>
+						<div class="skill row3__skill2">
+							<img src="./public/assets/babel.svg" alt="Github logo">
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</section>
 
 		<section class="myWorks" id="myWorks">
 
-			<div class="title__container">
-				<p class="container__bgChar">P</p>
-				<p class="container__title">Portfolio</p>
-			</div>
 
 			<div class="wrapper myWorks__wrapper">
+				<div class="title__container">
+					<p class="container__bgChar">P</p>
+					<p class="container__title">Portfolio</p>
+				</div>
 
 				<div class="myWorks__row project1 project">
 					<div class="project1__image project__image">
@@ -151,7 +166,11 @@
 							<span>RWD</span>
 							<span>GIT</span>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ut repellat quos possimus aperiam tenetur labore ab eveniet impedit eligendi autem vel praesentium, quaerat neque laborum iusto excepturi id, amet!</p>
+						<p>A web application which performs an AJAX that uses the WGER API to retrieve exercise information. Once the AJAX call is made, the application generates a list of workouts for the user to perform while displaying a timer for each workout and rest interval.</p>
+						<div class="project__links">
+							<a href="#">View Project</a>
+							<a href="#">View GitHub</a>
+						</div>
 					</div>
 				</div>
 
@@ -172,38 +191,21 @@
 							<span>CSS3</span>
 							<span>GIT</span>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus mollitia voluptate, debitis ullam ut sed, explicabo consectetur! Iusto laudantium odit dolores quia, blanditiis nobis quaerat dignissimos similique, natus et rerum!</p>
+						<p>A fun pokemon web application which takes in user values (depending on height or weight) and provides feedback in comparison to pokemon. The application uses the pokemon API to retrieve pokemon information, sorts the data in respect to what the user wishes to see, and then performs the comparison. Once complete, the application then displays the results. Additionally the intial AJAX call is slow in retrieving the pokemon information, however once the information has been retrieved it is stored and consecutive uses are much faster.</p>
+						<div class="project__links">
+							<a href="#">View Project</a>
+							<a href="#">View GitHub</a>
+						</div>
 					</div>
 				</div>
 
 				<div class="myWorks__row project3 project">
-					<div class="project3__image project__image">
-						<a href="http://bentran.io/makeup">
-							<img src="./public/assets/makeup.png" alt="">
-						</a>
-					</div>
-					<div class="project3__description project__description">
-						<p>Makeup On A Budget</p>
-						<div class="tags">
-							<span>API</span>
-							<span>JQUERY</span>
-							<span>PAIR PROGRAMMING</span>
-							<span>HTML5</span>
-							<span>CSS3</span>
-							<span>RWD</span>
-							<span>GIT</span>
-						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis natus ipsum voluptatibus eveniet eius voluptates, laboriosam mollitia numquam veniam atque magni a! Eos eaque ex, delectus repellat cumque, quam.</p>
-					</div>
-				</div>
-
-				<div class="myWorks__row project4 project">
 					<div class="project4__image project__image">
 						<a href="http://bentran.io/postcard">
 							<img src="./public/assets/postcard.png" alt="">
 						</a>
 					</div>
-					<div class="project4__description project__description">
+					<div class="project3__description project__description">
 						<p>Postcard Generator</p>
 						<div class="tags">
 							<span>JAVASCRIPT</span>
@@ -211,18 +213,23 @@
 							<span>PAIR PROGRAMMING</span>
 							<span>HTML5</span>
 							<span>CSS3</span>
+							<span>SASS</span>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est illum deserunt, quia incidunt dolorum id laudantium tempore hic in consectetur quisquam. Cumque reiciendis voluptatibus eveniet labore qui ut quo quae!</p>
+						<p>A small web application created with Javascript which asks user's to answer questions based on their interests. Once the user has answered all the questions, the application then generates a random postcard with regards to which options the user has selected. This project was coded and brought to life together with Adam McMillan.</p>
+						<div class="project__links">
+							<a href="#">View Project</a>
+							<a href="#">View GitHub</a>
+						</div>
 					</div>
 				</div>
 
-				<div class="myWorks__row project5 project">
+				<div class="myWorks__row project4 project">
 					<div class="project5__image project__image">
 						<a href="http://bentran.io/bakery">
 							<img src="./public/assets/bakery.png" alt="">
 						</a>
 					</div>
-					<div class="project5__description project__description">
+					<div class="project4__description project__description">
 						<p>Bakery Website</p>
 						<div class="tags">
 							<span>PSD TO HTML CONVERSION</span>
@@ -230,7 +237,11 @@
 							<span>HTML5</span>
 							<span>CSS3</span>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia illo, minus deleniti dicta! At, dolores cumque omnis unde natus et. Vel veritatis deserunt autem odio ex possimus tempora facere voluptatibus.</p>
+						<p>A single page website created from a PSD conversion. Created with SASS and made into a responsive web design.</p>
+						<div class="project__links">
+							<a href="#">View Project</a>
+							<a href="#">View GitHub</a>
+						</div>
 					</div>
 				</div>
 
@@ -267,24 +278,24 @@
 						
 						<div class="contactForm__name">
 							<label for="name">Name *</label>
-							<input type="text" name="name" required>
+							<input type="text" name="name" placeholder="e.g. Ben Tran" required>
 						</div>
 
 						<div class="contactForm__email">
 							<label for="email">Email *</label>
-							<input type="text" name="email" required>
+							<input type="text" name="email" placeholder="e.g. bbentran@gmail.com" required>
 						</div>
 
 
 						<div class="contactForm__subject">
 							<label for="subject">Subject</label>
-							<input type="text" name="subject">
+							<input type="text" name="subject" placeholder="e.g. How's it going?">
 						</div>
 
 
 						<div class="contactForm__message">
 							<label for="message">Message *</label>
-							<textarea name="message" required></textarea>
+							<textarea name="message" placeholder="Message goes here!" required></textarea>
 						</div>
 					</div>
 
@@ -292,5 +303,21 @@
 				</form>
 			</div>
 		</section>
+
+		<footer>
+			<div class="logo">
+				BEN TRAN
+			</div>
+			<div class="links__socialMedia">
+				<a href="https://twitter.com/bentrancodes"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="https://github.com/benTranCodes/"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+				<a href="https://www.linkedin.com/in/ben-tran-62343485"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				<a href="mailto:bbentran@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+			</div>
+			<div class="copyright">
+				<p>&copy; 2017. Coded by Ben Tran</p>
+				<p>Icons designed by <a href="http://www.flaticon.com/authors/freepik">Freepik</a></p>
+			</div>
+		</footer>
 	</body>
 </html>

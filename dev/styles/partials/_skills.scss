@@ -1,7 +1,10 @@
 .skills {
 	// padding-bottom: 85px;
+	.skills__wrapper {
+		padding: 120px 0;
+	}
 	.skills__missionStatement {
-		padding: 100px 0;
+		padding-bottom: 100px;
 		width: 85%;
 		margin: 0 auto;
 		text-align: center;
@@ -50,7 +53,7 @@
 			flex-direction: column-reverse;
 			flex-wrap: wrap;
 			// background: red;
-			margin: 0 auto 40px auto;
+			margin: 0 auto;
 			width: 33.3%;
 			img {
 				display: block;
@@ -74,4 +77,45 @@
 			width: 230px;
 		}
 	}
+}
+
+
+
+
+
+
+@media (max-width: 1150px) {
+	.skills .skills__list .skill img {
+		width: 150px;
+	}
+	.skills .skills__list {
+		.row2__skill1 img, .row2__skill3 img {
+			width: 180px;
+		}
+	}
+}
+
+@media (max-width: 860px) {
+
+	.skills .skills__list {
+		.row2__skill1 img, .row2__skill3 img {
+			width: 160px;
+		}
+	}
+}
+
+@media (max-width: 760px) {
+	.skills .skills__list {
+		flex-direction: row;
+		.skill {
+			width: 50%;
+		}
+	}
+
+	.skills .skills__list .skills__list__row {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+
 }

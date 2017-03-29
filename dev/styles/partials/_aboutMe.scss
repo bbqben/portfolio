@@ -44,7 +44,7 @@
 		justify-content: center;
 		align-items: center;
 		.aboutMe__image {
-			padding: 0 35px;
+			// padding: 0 35px;
 			border-radius: 50%;
 			width: 450px;
 
@@ -57,21 +57,84 @@
 				
 				margin: 0;
 			}
+			.aboutMe__title {
+				display: inline-block;
+				padding: 0 20px 5px 20px;
+				text-align: center;
+				margin-bottom: 20px;
+				letter-spacing: 0.2rem;
+				font-size: 2.1rem;
+			}
 		}
 		.aboutMe__name {
 			text-transform: uppercase;
 			font-weight: 900;
 			font-size: 4rem;
+			letter-spacing: .7rem;
 		}
 		.aboutMe__title {
 			font-size: 1.8rem;
 		}
 		.aboutMe__lineBreak {
-			font-size: 2rem;
-			line-height: 3.8rem;
+			width: 120px;
+			border-bottom: 1px solid black;
+			margin: 15px auto;
 		}
 		.aboutMe__bio {
 			font-size: 1.8rem;
+			line-height: 1.618;
 		}
+	}
+}
+
+
+
+@media (max-width: 1150px) {
+	
+
+	.aboutMe .aboutMe__wrapper .aboutMe__description {
+		padding: 0;
+	}
+}
+
+@media (max-width: 865px) {
+	.aboutMe .title__container {
+		padding-bottom: 60px;
+	}
+	.aboutMe .aboutMe__wrapper .aboutMe__image {
+		width: 380px;
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 800px) {
+	.aboutMe {
+		.aboutMe__wrapper {
+			flex-direction: column;
+			margin-bottom: 40px;
+			.aboutMe__description {
+				margin: 0;
+				width: 75%;
+				text-align: center;
+				.aboutMe__lineBreak::after {
+					content: " ";
+					padding-bottom: 100px;
+					border-bottom: 1px solid black;
+				}
+				p:last-child {
+					text-align: left;
+				}
+			}
+		}
+	}
+
+}
+
+@media (max-width: 460px) {
+	.aboutMe .aboutMe__wrapper .aboutMe__name {
+		font-size: 3.6rem;
+	}
+	.aboutMe .aboutMe__wrapper .aboutMe__image {
+		width: 100%;
 	}
 }

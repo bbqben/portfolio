@@ -13,3 +13,39 @@
 	margin: 0 auto;
 }
 
+
+
+
+
+footer {
+	background: #F6F6F6;
+	padding: 100px 0;
+	text-align: center;
+	.logo {
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		margin-bottom: 35px;
+		font-size: 3rem;
+		font-weight: 400;
+		letter-spacing: 2px;
+	}
+		.links__socialMedia {
+			font-size: 1.4rem;
+			margin-bottom: 15px;
+			i {
+				margin: 0 10px;
+				color: #000;
+				transition: color 0.2s ease;
+			}
+			i:hover {
+				color: $color-blue;
+			}
+		}
+}
+
+
+@media (max-width: 690px) {
+	.wrapper {
+		max-width: 95%;
+	}
+}
+
