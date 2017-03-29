@@ -399,8 +399,7 @@ header {
     margin-bottom: 40px; }
     .aboutMe .aboutMe__wrapper .aboutMe__description {
       margin: 0;
-      width: 75%;
-      text-align: center; }
+      width: 75%; }
       .aboutMe .aboutMe__wrapper .aboutMe__description .aboutMe__lineBreak::after {
         content: " ";
         padding-bottom: 100px;
