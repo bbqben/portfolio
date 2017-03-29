@@ -359,7 +359,7 @@ header {
         margin: 0; }
       .aboutMe .aboutMe__wrapper .aboutMe__description .aboutMe__title {
         display: inline-block;
-        padding: 0 20px 5px 20px;
+        padding-bottom: 5px;
         text-align: center;
         margin-bottom: 20px;
         letter-spacing: 0.2rem;
@@ -374,7 +374,7 @@ header {
     .aboutMe .aboutMe__wrapper .aboutMe__lineBreak {
       width: 120px;
       border-bottom: 1px solid black;
-      margin: 15px auto; }
+      margin: 15px 0; }
     .aboutMe .aboutMe__wrapper .aboutMe__bio {
       font-size: 1.8rem;
       line-height: 1.618; }
@@ -632,7 +632,7 @@ header {
       font-weight: 700;
       letter-spacing: 2.5rem;
       text-transform: uppercase;
-      margin: 2px; }
+      margin: 4px; }
   .contact .contactInfo {
     display: -ms-flexbox;
     display: flex;
