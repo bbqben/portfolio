@@ -34,7 +34,7 @@ header {
 		} // End of .links
 		.links__website {
 
-			
+			position: relative;
 			width: 100%;
 			font-size: 1.8rem;
 				text-align: right;
@@ -44,25 +44,9 @@ header {
 				padding-bottom: 1px;
 				font-weight: 100;
 			}
-				a:before {
-					  content: "";
-					  position: absolute;
-					  width: 100%;
-					  height: 2px;
-					  bottom: -3px;
-					  left: 0;
-					  background-color: $color-blue;
-					  visibility: hidden;
-					  -webkit-transform: scaleX(0);
-					  transform: scaleX(0);
-					  -webkit-transition: all 0.3s ease-in-out 0s;
-					  transition: all 0.3s ease-in-out 0s;
-				}
-				a:hover:before {
-					visibility: visible;
-					-webkit-transform: scaleX(1);
-					transform: scaleX(1);
-				}
+			a:hover {
+				border-bottom: 1px solid #7dddf9;
+			}
 		}
 	}
 }
