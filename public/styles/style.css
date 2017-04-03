@@ -557,6 +557,10 @@ header {
         width: 45%;
         font-size: 1.6rem;
         line-height: 2.8rem; }
+        .myWorks .myWorks__wrapper .project .project__description a {
+          text-decoration: underline; }
+        .myWorks .myWorks__wrapper .project .project__description a:hover {
+          color: #1cc4f5; }
         .myWorks .myWorks__wrapper .project .project__description p {
           font-family: roboto;
           margin: 0; }
